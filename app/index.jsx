@@ -1,6 +1,7 @@
 import { Image, StyleSheet, Text, View } from 'react-native'
 
-import Logo from "../assets/img/logo_light.png"  // Before using the image, you have to import it.
+import Logo from "../assets/img/logo_light.png"
+import {Link} from "expo-router"
 
 const Home = () => {
   return (
@@ -14,14 +15,13 @@ const Home = () => {
             Reading List App
         </Text>
 
-        {/* <View style={styles.card}>
-            <Text>Hello, this is a Card</Text>
-        </View> */}
+        <Link style={styles.link} href="/about">Take me to About Page</Link>
+        <Link style={styles.link} href="/contact">Take me to Contact Page</Link> 
     </View>
   )
 }
 
-export default Home
+export default Home;
 
 const styles = StyleSheet.create({
   container: {
@@ -37,16 +37,8 @@ const styles = StyleSheet.create({
   img: {
     marginVertical: 20, 
   },
-//   card: {
-//     backgroundColor: '#fff',
-//     padding: 20,
-//     borderRadius: 5,
-//     // iOS shadow properties
-//     shadowColor: '#000',
-//     shadowOffset: { width: 4, height: 4 },
-//     shadowOpacity: 0.1,
-//     shadowRadius: 4,
-//     // Android shadow property
-//     elevation: 4,
-//   }
+  link: {
+    marginVertical: 10,
+    borderBottomWidth: 1,
+  },
 })
