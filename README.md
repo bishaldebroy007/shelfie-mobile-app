@@ -26,4 +26,8 @@ npx expo start
     ```javascript
     import { Link } from "expo-router";
     ```
-    
+
+
+## Acknowledgement
+
+- [Net ninja - Youtube Playlist](https://www.youtube.com/playlist?list=PL4cUxeGkcC9hNTz3sxqGTfxAwU-DIHJd2)
