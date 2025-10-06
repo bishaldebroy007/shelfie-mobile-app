@@ -1,21 +1,22 @@
 import { Image, StyleSheet, Text, View } from 'react-native'
 
-
+import Logo from "../assets/img/logo_light.png"
 
 const Home = () => {
   return (
     <View style={styles.container}>
 
+        <Image source={Logo} />
 
-      <Text style={styles.title}>The Number 1</Text>
+        <Text style={styles.title}>The Number 1</Text>
 
-      <Text style={{ marginTop: 10, marginBottom: 30 }}>
-        Reading List App
-      </Text>
+        <Text style={{ marginTop: 10, marginBottom: 30 }}>
+            Reading List App
+        </Text>
 
-      <View style={styles.card}>
-        <Text>Hello, this is a Card</Text>
-      </View>
+        <View style={styles.card}>
+            <Text>Hello, this is a Card</Text>
+        </View>
     </View>
   )
 }
@@ -37,6 +38,12 @@ const styles = StyleSheet.create({
     backgroundColor: '#fff',
     padding: 20,
     borderRadius: 5,
-    boxShadow: "4px 4px rgba(0,0,0,0.1)"
+    // iOS shadow properties
+    shadowColor: '#000',
+    shadowOffset: { width: 4, height: 4 },
+    shadowOpacity: 0.1,
+    shadowRadius: 4,
+    // Android shadow property
+    elevation: 4,
   }
 })
