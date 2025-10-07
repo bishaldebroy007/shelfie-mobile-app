@@ -1,11 +1,13 @@
-import { Image, StyleSheet, Text, View } from 'react-native'
+import { Image, StyleSheet, Text, View } from 'react-native';
 
-import Logo from "../assets/img/logo_light.png"
-import {Link} from "expo-router"
+import Logo from "../assets/img/logo_light.png";
+import {Link} from "expo-router";
+// Thesed components
+import ThemedView from '../components/ThemedView'
 
 const Home = () => {
   return (
-    <View style={styles.container}>
+    <ThemedView style={styles.container}>
 
         <Image source={Logo} style={styles.img} />
 
@@ -17,7 +19,7 @@ const Home = () => {
 
         <Link style={styles.link} href="/about">Take me to About Page</Link>
         <Link style={styles.link} href="/contact">Take me to Contact Page</Link> 
-    </View>
+    </ThemedView>
   )
 }
 
