@@ -1,16 +1,21 @@
-import { StyleSheet, Text, View } from 'react-native'
+import { StyleSheet, Text, useColorScheme, View } from 'react-native'
 import { Slot, Stack } from 'expo-router'
+import { Colors } from '../constants/Colors';
 
 const Rootlayout = () => {
+
+  const colorScheme = useColorScheme();
+  // Just checking the output of useColorScheme; which is light by default
+  // console.log(colorScheme);
+  const theme = Colors[colorScheme] ?? Colors.light;  // The ?? will work as a fallback if colorScheme is null
+
   return (
     <View style={{flex: 1}}>
-      {/* <Slot/> */}
-      {/* <Stack/> */}
       <Stack screenOptions={{ 
-        headerStyle: { backgroundColor: '#c3c2c2ff' },
+        headerStyle: { backgroundColor: theme.navBackground },
         headerTitleStyle: { fontWeight: 'bold' },
         headerTitleAlign: 'center',
-        headerTintColor: '#333' 
+        headerTintColor: theme.title,
         }}>
         <Stack.Screen
           name="index"

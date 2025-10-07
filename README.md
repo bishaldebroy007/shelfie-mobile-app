@@ -36,7 +36,9 @@ npx expo start
 - But if we want features like, trace back to previous page and other advanced functionality, we can use `<Stack />` in the same manner as `<Slot />`.
 - If we want more customization, we can also use `<Stack></ Stack>`
 
+## Light & Dark Modes
 
+- We will be using a hook to solve the issue, `useColorScheme`.
 
 ## Acknowledgement
 
