@@ -26,7 +26,7 @@ const Rootlayout = () => {
               title: 'Home'
             }}
           />
-          <Stack.Screen
+          {/* <Stack.Screen
             name="about"
             options={{
               title: 'About'
@@ -36,6 +36,12 @@ const Rootlayout = () => {
             name="contact"
             options={{
               title: 'Contact'
+            }}
+          /> */}
+          <Stack.Screen
+            name="contact"
+            options={{
+              headerShown: false, 
             }}
           />
         </Stack>
