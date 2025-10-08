@@ -1,23 +1,34 @@
-import { Image, StyleSheet, Text, View } from 'react-native'
+import { Image, StyleSheet, Text,  } from 'react-native';
 
-import Logo from "../assets/img/logo_light.png"
-import {Link} from "expo-router"
+import {Link} from "expo-router";
+// Themed components
+import ThemedView from '../components/ThemedView'
+import ThemedLogo from '../components/ThemedLogo';
+import Spacer from '../components/Spacer';
+import ThemedText from '../components/ThemedText';
 
 const Home = () => {
   return (
-    <View style={styles.container}>
+    <ThemedView style={styles.container}>
 
-        <Image source={Logo} style={styles.img} />
+        <ThemedLogo/>
+        <Spacer height={20} />
 
-        <Text style={styles.title}>The Number 1</Text>
+        <ThemedText style={styles.title} title={true}>The Number 1</ThemedText>
 
-        <Text style={{ marginTop: 10, marginBottom: 30 }}>
+        <Spacer height={10}/>
+        <ThemedText>
             Reading List App
-        </Text>
+        </ThemedText>
+        <Spacer/>
 
-        <Link style={styles.link} href="/about">Take me to About Page</Link>
-        <Link style={styles.link} href="/contact">Take me to Contact Page</Link> 
-    </View>
+        <Link style={styles.link} href="/about">
+            <ThemedText>Take me to About Page</ThemedText>
+        </Link>
+        <Link style={styles.link} href="/contact">
+          <ThemedText>Take me to Contact Page</ThemedText>
+        </Link> 
+    </ThemedView>
   )
 }
 
@@ -25,20 +36,20 @@ export default Home;
 
 const styles = StyleSheet.create({
   container: {
-    backgroundColor: '#e0dfe8',
     flex: 1,
     alignItems: 'center',
     justifyContent: 'center'
   },
   title: {
     fontWeight: 'bold',
-    fontSize: 18,
+    fontSize: 20,
   },
-  img: {
-    marginVertical: 20, 
-  },
+  // img: {
+  //   marginVertical: 20, 
+  // },
   link: {
     marginVertical: 10,
     borderBottomWidth: 1,
+    fontSize: 13,
   },
 })
