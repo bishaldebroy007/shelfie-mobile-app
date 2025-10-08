@@ -39,7 +39,7 @@ const Rootlayout = () => {
             }}
           /> */}
           <Stack.Screen
-            name="contact"
+            name="(auth)"
             options={{
               headerShown: false, 
             }}
