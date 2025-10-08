@@ -26,18 +26,6 @@ const Rootlayout = () => {
               title: 'Home'
             }}
           />
-          {/* <Stack.Screen
-            name="about"
-            options={{
-              title: 'About'
-            }}
-          />
-          <Stack.Screen
-            name="contact"
-            options={{
-              title: 'Contact'
-            }}
-          /> */}
           <Stack.Screen
             name="(auth)"
             options={{
@@ -51,6 +39,6 @@ const Rootlayout = () => {
   )
 }
 
-export default Rootlayout
+export default Rootlayout;
 
-const styles = StyleSheet.create({})
+const styles = StyleSheet.create({});

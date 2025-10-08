@@ -22,7 +22,7 @@ const Register = () => {
         </Link>
     </ThemedView>
   )
-}
+};
 
 export default Register;
 
