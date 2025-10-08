@@ -6,7 +6,7 @@
     "version": "1.0.0",
     "orientation": "portrait",
     "icon": "./assets/icon.png",
-    "userInterfaceStyle": "dark", //could be light or dark
+    "userInterfaceStyle": "light", //could be light or dark
     "newArchEnabled": true,
     "splash": {
       "image": "./assets/splash-icon.png",
