@@ -12,6 +12,11 @@ npx create-expo-app@latest --template blank .
 ```bash
 npx expo start
 ```
+### Starting the Project while clearing the cache.
+
+```bash
+npx expo start --clear
+```
 
 ## Project Notes
  - [Notes](./PROJECT-NOTES.md)
